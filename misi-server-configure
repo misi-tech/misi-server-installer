@@ -24,7 +24,7 @@ misi_intro()
 misi_update_os()
 {
 	misi_log "Updating OS (Linux)..."
-	MISI_REQUIERED_INSTALLATION="pydf zip unzip htop apache2 apache2-doc apache2-utils libapache2-mod-php7.0 apache2-dev php7.0-mcrypt php7.0-mbstring php7.0-curl php7.0-gd php7.0-intl php7.0-xs php-xdebug php-apcu ffmpeg ffmpeg-doc alsa-base libportaudio2 libglew-dev libgstreamer* doc-base libsigc++-2.0-doc libuuid-perl libxml++2.6-doc doxygen libmbedtls-dev libnl-utils freeglut3-dev default-jdk default-jdk-headless default-jre default-jre-headless default-java-plugin"
+	MISI_REQUIERED_INSTALLATION="pydf zip unzip htop mesa-utils apache2 apache2-doc apache2-utils libapache2-mod-php7.0 apache2-dev php7.0-mcrypt php7.0-mbstring php7.0-curl php7.0-gd php7.0-intl php7.0-xs php-xdebug php-apcu ffmpeg ffmpeg-doc alsa-base libportaudio2 libglew-dev libgstreamer* doc-base libsigc++-2.0-doc libuuid-perl libxml++2.6-doc doxygen libmbedtls-dev libnl-utils freeglut3-dev default-jdk default-jdk-headless default-jre default-jre-headless default-java-plugin"
 	apt-get -qq update 
 	apt-get -qq install $MISI_REQUIERED_INSTALLATION
 	apt-get -qq -y upgrade
