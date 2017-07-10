@@ -1,7 +1,16 @@
 #!/bin/bash
-#OpenCV 3.2.0 On NV6 N-series Azure
-clear
+#	
+#	Update OpenCV to version 3.2.0 On Microsoft Azure NV6 N-series Azure
+#	Created by Eran Caballero on 22/09/2016.	
+#	GNU GENERAL PUBLIC LICENSE
+#	MISI TECH INC 
+#
 
+
+misi_cls()
+{
+	clear
+}
 
 misi_log()
 {
@@ -91,6 +100,7 @@ misi_opencv_setup()
 
 # MISI MAIN FLOW
 
+misi_cls()
 misi_intro
 misi_update_os
 misi_update_cuda_profiles
