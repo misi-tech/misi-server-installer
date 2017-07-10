@@ -4,7 +4,10 @@
 #	Created by Eran Caballero on 22/09/2016.	
 #	GNU GENERAL PUBLIC LICENSE
 #	MISI TECH INC 
-#
+
+#	* error in make proccess at 12%
+
+
 
 
 misi_cls()
