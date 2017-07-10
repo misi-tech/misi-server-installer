@@ -27,8 +27,14 @@ misi_log()
 
 misi_intro()
 {
+	misi_cls
 	misi_log "Hey :)"
 	misi_log "Installing OpenCV"
+}
+
+misi_end()
+{
+	misi_log "Done !!"
 }
 
 misi_update_os()
@@ -100,8 +106,9 @@ misi_opencv_setup()
 
 # MISI MAIN FLOW
 
-misi_cls()
+
 misi_intro
 misi_update_os
 misi_update_cuda_profiles
 misi_opencv_setup
+misi_end
