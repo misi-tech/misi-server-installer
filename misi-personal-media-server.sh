@@ -6,7 +6,7 @@
 #	GNU GENERAL PUBLIC LICENSE
 #	MISI TECH INC 
 
-clear
+
 
 
 misi_log()
@@ -24,9 +24,15 @@ misi_log()
 
 misi_intro()
 {
+	clear
 	MISI_SERVER_NAME="Misi Personal Media Server"
 	misi_log "Hey :)"
 	misi_log "Installing $MISI_SERVER_NAME"
+}
+
+misi_end()
+{
+	misi_log "DONE !"
 }
 
 misi_update_os()
@@ -233,20 +239,22 @@ misi_opencv_installation()
 	  misi_log "OpenCV setup updated :)"
 }
 
+misi_main()
+{
+	misi_intro
+	misi_update_os
+	misi_update_locale
+	misi_handle_sudoers
+	misi_update_profiles
+	misi_ssh_setup
+	misi_update_profiles
+	misi_reboot_message_setup
+	misi_web_install
+	misi_cdn_server_install
+	misi_mod_web_server
+	misi_ffmpeg_installation
+	misi_opencv_installation
+	misi_end 
+}
 
-
-# MISI MAIN FLOW
-
-misi_intro
-misi_update_os
-misi_update_locale
-misi_handle_sudoers
-misi_update_profiles
-misi_ssh_setup
-misi_update_profiles
-misi_reboot_message_setup
-misi_web_install
-misi_cdn_server_install
-misi_mod_web_server
-misi_ffmpeg_installation
-misi_opencv_installation
+misi_main
