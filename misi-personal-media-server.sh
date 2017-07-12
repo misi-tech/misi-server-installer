@@ -140,8 +140,8 @@ misi_update_apache_conf_mod()
                 MISI_APACHE_CONF_FILE_CONTENT_1="LoadModule h264_streaming_module /usr/lib/apache2/modules/mod_h264_streaming.so"
                 MISI_APACHE_CONF_FILE_CONTENT_2="AddHandler h264-streaming.extensions .mp4"
                 echo "# MISI :]" >> $MISI_APACHE_CONF_FILE
-                echo -e $MISI_APACHE_CONF_FILE_CONTENT1 >> $MISI_APACHE_CONF_FILE
-                echo -e $MISI_APACHE_CONF_FILE_CONTENT2 >> $MISI_APACHE_CONF_FILE
+                echo -e $MISI_APACHE_CONF_FILE_CONTENT_1 >> $MISI_APACHE_CONF_FILE
+                echo -e $MISI_APACHE_CONF_FILE_CONTENT_2 >> $MISI_APACHE_CONF_FILE
                 misi_log "Apache mod message setup OK"
         fi
 }
